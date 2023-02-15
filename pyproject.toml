@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qa-guru-python-3-17"
+version = "0.1.0"
+description = "This is a test project for qa guru"
+authors = ["evensty <maxim.veselov11@gmail.com>"]
+readme = "README.md"
+packages = [{include = "qa_guru_python_3_17"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.1"
+selene = "2.0.0b16"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.16.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
